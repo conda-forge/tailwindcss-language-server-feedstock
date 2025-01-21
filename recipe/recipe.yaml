@@ -1,5 +1,5 @@
 context:
-  version: "0.14.0"
+  version: "0.14.1"
 
 package:
   name: tailwindcss-language-server
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://registry.npmjs.org/@tailwindcss/language-server/-/language-server-${{ version }}.tgz
-  sha256: d23eac9efbcb647f4743f6ff02fa2944fb2295a8151b936d96a045d5b01a3659
+  sha256: 06b75a9418d0b891ce02858e4934ed6a4f1216caf29fcbaa41e1a7db507ecd91
 
 build:
   number: 0
