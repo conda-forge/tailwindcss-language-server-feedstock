@@ -18,5 +18,5 @@ EOF
 chmod +x ${PREFIX}/bin/tailwindcss-language-server
 
 tee ${PREFIX}/bin/tailwindcss-language-server.cmd << EOF
-call %CONDA_PREFIX%\bin\node %CONDA_PREFIX%\bin\tailwindcss-language-server %*
+call %CONDA_PREFIX%\bin\node %CONDA_PREFIX%\lib\node_modules\@tailwindcss\language-server\bin\css-language-server %*
 EOF
