@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `tailwindcss-language-server` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install tailwindcss-language-server
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install tailwindcss-language-server
 ```
 
-It is possible to list all of the versions of `tailwindcss-language-server` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add tailwindcss-language-server
+# for installing globally
+pixi global install tailwindcss-language-server
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `tailwindcss-language-server` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search tailwindcss-language-server --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search tailwindcss-language-server --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search tailwindcss-language-server --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds tailwindcss-language-server --channel conda-forge
 # List dependencies of `tailwindcss-language-server`:
 mamba repoquery depends tailwindcss-language-server --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
