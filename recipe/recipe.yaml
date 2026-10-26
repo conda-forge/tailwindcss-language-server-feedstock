@@ -10,7 +10,7 @@ source:
   sha256: 89de5ef780d14e54a11cdb0832682cf937d37a1a1c35e17eb2a552272d7aa1ad
 
 build:
-  number: 0
+  number: 1
   noarch: generic
 
 requirements:
@@ -35,3 +35,4 @@ about:
 extra:
   recipe-maintainers:
     - danielnachun
+    - pavelzw

@@ -13,10 +13,10 @@ npm install -ddd \
 mkdir -p ${PREFIX}/bin
 tee ${PREFIX}/bin/tailwindcss-language-server << EOF
 #!/bin/sh
-\${CONDA_PREFIX}/lib/node_modules/@tailwindcss/language-server/bin/css-language-server "\$@"
+exec \${CONDA_PREFIX}/lib/node_modules/@tailwindcss/language-server/bin/tailwindcss-language-server "\$@"
 EOF
 chmod +x ${PREFIX}/bin/tailwindcss-language-server
 
 tee ${PREFIX}/bin/tailwindcss-language-server.cmd << EOF
-call %CONDA_PREFIX%\bin\node %CONDA_PREFIX%\lib\node_modules\@tailwindcss\language-server\bin\css-language-server %*
+call %CONDA_PREFIX%\bin\node %CONDA_PREFIX%\lib\node_modules\@tailwindcss\language-server\bin\tailwindcss-language-server %*
 EOF
